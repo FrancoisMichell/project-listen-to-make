@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grupoA.listentomake.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/etlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etSenha"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="164dp"
+            android:ems="10"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/etlogin"
+            android:layout_marginRight="56dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            android:text="LISTen To Make"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/btEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btCriarLogin"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_marginBottom="39dp"
+            android:text="Entar" />
+
+        <Button
+            android:id="@+id/btCriarLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/etSenha"
+            android:text="Criar login" />
+
+        <Button
+            android:id="@+id/btEntrarSemLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btEntrar"
+            android:layout_alignBottom="@+id/btEntrar"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_marginRight="26dp"
+            android:text="Entrar sem login" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etSenha"
+            android:layout_alignLeft="@+id/btCriarLogin"
+            android:text="Senha:"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:text="Login:"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+
